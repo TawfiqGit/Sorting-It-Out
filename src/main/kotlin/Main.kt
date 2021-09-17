@@ -1,6 +1,7 @@
-fun main(args: Array<String>) {
-    println("Hello World!")
+import tasks.BulletPuller
+import tasks.LaunchDate
 
-    // Try adding program arguments at Run/Debug configuration
-    println("Program arguments: ${args.joinToString()}")
+fun main() {
+    val threadDate = Thread(LaunchDate())
+    threadDate.start()
 }
